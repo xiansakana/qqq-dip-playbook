@@ -1,0 +1,305 @@
+{
+  "episodes": [
+    {
+      "label": "2020",
+      "h_mode": "rolling60",
+      "policies": {
+        "playbook": {
+          "end_ret_pct": 45.99,
+          "max_dd_pct": -12.07,
+          "call_count": 3,
+          "marks": {
+            "2020-03-23": -5.03,
+            "2020-06-08": 12.26,
+            "2020-12-31": 45.99
+          },
+          "buys_calls": [
+            {
+              "tier": "T2",
+              "kind": "call-medium",
+              "date": "2020-02-27",
+              "strike": 270.0,
+              "expiry": "2022-01-17",
+              "prem": 19.788,
+              "contracts": 1,
+              "usd": 1978.8,
+              "vxn": 41.0
+            },
+            {
+              "tier": "T3",
+              "kind": "call-medium",
+              "date": "2020-03-09",
+              "strike": 255.0,
+              "expiry": "2022-01-17",
+              "prem": 27.9558,
+              "contracts": 1,
+              "usd": 2795.58,
+              "vxn": 53.68000030517578
+            },
+            {
+              "tier": "T3",
+              "kind": "call-deep",
+              "date": "2020-03-09",
+              "strike": 305.0,
+              "expiry": "2022-01-17",
+              "prem": 6.5494,
+              "contracts": 2,
+              "usd": 1309.88,
+              "vxn": 53.68000030517578
+            }
+          ]
+        },
+        "right_only": {
+          "end_ret_pct": 40.51,
+          "max_dd_pct": -11.23,
+          "call_count": 1,
+          "marks": {
+            "2020-03-23": -4.76,
+            "2020-06-08": 13.28,
+            "2020-12-31": 40.51
+          },
+          "buys_calls": [
+            {
+              "tier": "R1",
+              "kind": "call-medium",
+              "date": "2020-03-26",
+              "strike": 255.0,
+              "expiry": "2022-01-17",
+              "prem": 29.5648,
+              "contracts": 1,
+              "usd": 2956.48,
+              "vxn": 57.599998474121094
+            }
+          ]
+        }
+      },
+      "delta_right_minus_playbook": {
+        "end_ret_pp": -5.48,
+        "max_dd_pp": 0.84
+      }
+    },
+    {
+      "label": "2022-roll",
+      "h_mode": "rolling60",
+      "policies": {
+        "playbook": {
+          "end_ret_pct": 4.52,
+          "max_dd_pct": -16.41,
+          "call_count": 3,
+          "marks": {
+            "2022-06-16": -11.32,
+            "2022-10-14": -14.39,
+            "2023-12-29": 4.52
+          },
+          "buys_calls": [
+            {
+              "tier": "T3",
+              "kind": "call-medium",
+              "date": "2022-02-23",
+              "strike": 435.0,
+              "expiry": "2024-01-17",
+              "prem": 23.8846,
+              "contracts": 2,
+              "usd": 4776.92,
+              "vxn": 35.27000045776367
+            },
+            {
+              "tier": "T3",
+              "kind": "call-deep",
+              "date": "2022-02-23",
+              "strike": 520.0,
+              "expiry": "2024-01-17",
+              "prem": 2.4185,
+              "contracts": 5,
+              "usd": 1209.23,
+              "vxn": 35.27000045776367
+            },
+            {
+              "tier": "T4",
+              "kind": "call-medium",
+              "date": "2022-05-19",
+              "strike": 380.0,
+              "expiry": "2024-01-17",
+              "prem": 19.1936,
+              "contracts": 1,
+              "usd": 1919.36,
+              "vxn": 36.150001525878906
+            }
+          ]
+        },
+        "right_only": {
+          "end_ret_pct": 11.36,
+          "max_dd_pct": -11.39,
+          "call_count": 1,
+          "marks": {
+            "2022-06-16": -7.85,
+            "2022-10-14": -9.33,
+            "2023-12-29": 11.36
+          },
+          "buys_calls": [
+            {
+              "tier": "R1",
+              "kind": "call-medium",
+              "date": "2022-05-27",
+              "strike": 410.0,
+              "expiry": "2024-01-17",
+              "prem": 14.9187,
+              "contracts": 3,
+              "usd": 4475.6,
+              "vxn": 32.0
+            }
+          ]
+        }
+      },
+      "delta_right_minus_playbook": {
+        "end_ret_pp": 6.84,
+        "max_dd_pp": 5.02
+      }
+    },
+    {
+      "label": "2022-peak",
+      "h_mode": "cycle_peak",
+      "policies": {
+        "playbook": {
+          "end_ret_pct": 9.82,
+          "max_dd_pct": -26.34,
+          "call_count": 3,
+          "marks": {
+            "2022-06-16": -18.72,
+            "2022-10-14": -22.52,
+            "2023-12-29": 9.82
+          },
+          "buys_calls": [
+            {
+              "tier": "T3",
+              "kind": "call-medium",
+              "date": "2022-02-23",
+              "strike": 435.0,
+              "expiry": "2024-01-17",
+              "prem": 23.8846,
+              "contracts": 2,
+              "usd": 4776.92,
+              "vxn": 35.27000045776367
+            },
+            {
+              "tier": "T3",
+              "kind": "call-deep",
+              "date": "2022-02-23",
+              "strike": 520.0,
+              "expiry": "2024-01-17",
+              "prem": 2.4185,
+              "contracts": 5,
+              "usd": 1209.23,
+              "vxn": 35.27000045776367
+            },
+            {
+              "tier": "T4",
+              "kind": "call-medium",
+              "date": "2022-03-14",
+              "strike": 420.0,
+              "expiry": "2024-01-17",
+              "prem": 23.8632,
+              "contracts": 1,
+              "usd": 2386.32,
+              "vxn": 36.54999923706055
+            }
+          ]
+        },
+        "right_only": {
+          "end_ret_pct": 14.76,
+          "max_dd_pct": -23.46,
+          "call_count": 1,
+          "marks": {
+            "2022-06-16": -15.72,
+            "2022-10-14": -18.94,
+            "2023-12-29": 14.76
+          },
+          "buys_calls": [
+            {
+              "tier": "R1",
+              "kind": "call-medium",
+              "date": "2022-03-16",
+              "strike": 450.0,
+              "expiry": "2024-01-17",
+              "prem": 18.0486,
+              "contracts": 2,
+              "usd": 3609.72,
+              "vxn": 30.809999465942383
+            }
+          ]
+        }
+      },
+      "delta_right_minus_playbook": {
+        "end_ret_pp": 4.94,
+        "max_dd_pp": 2.88
+      }
+    },
+    {
+      "label": "2025",
+      "h_mode": "rolling60",
+      "policies": {
+        "playbook": {
+          "end_ret_pct": 29.84,
+          "max_dd_pct": -6.56,
+          "call_count": 2,
+          "marks": {
+            "2025-04-08": -2.17,
+            "2025-06-10": 11.29,
+            "2025-12-31": 29.84
+          },
+          "buys_calls": [
+            {
+              "tier": "T3",
+              "kind": "call-medium",
+              "date": "2025-04-04",
+              "strike": 560.0,
+              "expiry": "2027-01-17",
+              "prem": 31.8046,
+              "contracts": 1,
+              "usd": 3180.46,
+              "vxn": 37.650001525878906
+            },
+            {
+              "tier": "T3",
+              "kind": "call-deep",
+              "date": "2025-04-04",
+              "strike": 665.0,
+              "expiry": "2027-01-17",
+              "prem": 3.6141,
+              "contracts": 3,
+              "usd": 1084.23,
+              "vxn": 37.650001525878906
+            }
+          ]
+        },
+        "right_only": {
+          "end_ret_pct": 29.27,
+          "max_dd_pct": -6.99,
+          "call_count": 1,
+          "marks": {
+            "2025-04-08": -2.37,
+            "2025-06-10": 10.68,
+            "2025-12-31": 29.27
+          },
+          "buys_calls": [
+            {
+              "tier": "R1",
+              "kind": "call-medium",
+              "date": "2025-04-23",
+              "strike": 600.0,
+              "expiry": "2027-01-17",
+              "prem": 24.0031,
+              "contracts": 2,
+              "usd": 4800.62,
+              "vxn": 31.829999923706055
+            }
+          ]
+        }
+      },
+      "delta_right_minus_playbook": {
+        "end_ret_pp": -0.57,
+        "max_dd_pp": -0.43
+      }
+    }
+  ]
+}

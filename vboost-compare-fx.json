@@ -1,0 +1,5674 @@
+{
+  "asof": "2026-09-09",
+  "B": 100000,
+  "fx": 7.0,
+  "model": "equity+synthetic-leap+real-cny-etf",
+  "proxy": "159509.SZ when listed (from 2023-07-19); else 513100.SS",
+  "cash_modes": {
+    "usd_only": {
+      "cash_usd": 100000.0,
+      "cash_cny": 0.0
+    },
+    "half": {
+      "cash_usd": 50000.0,
+      "cash_cny": 350000.0
+    },
+    "cny_heavy": {
+      "cash_usd": 20000.0,
+      "cash_cny": 560000.0
+    }
+  },
+  "episodes": [
+    {
+      "label": "2020 COVID 急跌急涨",
+      "start": "2020-02-01",
+      "end": "2020-12-31",
+      "marks": [
+        "2020-03-23",
+        "2020-04-01",
+        "2020-06-08",
+        "2020-09-02",
+        "2020-12-31"
+      ],
+      "h_mode": "rolling60",
+      "modes": {
+        "usd_only": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2020-02-25",
+                "px": 215.37,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2020-02-27",
+                "px": 205.64,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2020-02-27",
+                "px": 205.64,
+                "usd": 21.2,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 1,
+                "usd": 2795.58,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 2104.42,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 90.12,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2020-03-12",
+                "px": 177.32,
+                "usd": 9600.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2020-03-12",
+                "px": 177.32,
+                "usd": 2400.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 8000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2020-04-17",
+                "px": 215.29,
+                "usd": 20000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 25,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 70000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 32561.12,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 114798.41,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 11,
+              "call": 3
+            },
+            "max_dd_pct": -12.26,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 147359.53,
+              "ret_pct": 47.36,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 94707.52,
+                "ret_pct": -5.29,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 96691.05,
+                "ret_pct": -3.31,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 112809.88,
+                "ret_pct": 12.81,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 146622.71,
+                "ret_pct": 46.62,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 147359.53,
+                "ret_pct": 47.36,
+                "px": 313.74
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2020-02-25",
+                "px": 215.37,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2020-02-27",
+                "px": 205.64,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2020-02-27",
+                "px": 205.64,
+                "usd": 771.2,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 2,
+                "usd": 5591.15,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 1146.35,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2020-03-09",
+                "px": 193.57,
+                "usd": 615.12,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2020-03-12",
+                "px": 177.32,
+                "usd": 13200.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2020-03-12",
+                "px": 177.32,
+                "usd": 3300.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 6666.66,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 1666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2020-04-17",
+                "px": 215.29,
+                "usd": 16666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 26,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 80000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 22561.12,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 132986.1,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 11,
+              "call": 3
+            },
+            "max_dd_pct": -14.38,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 155547.22,
+              "ret_pct": 55.55,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 92554.64,
+                "ret_pct": -7.45,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 95538.31,
+                "ret_pct": -4.46,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 114775.36,
+                "ret_pct": 14.78,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 155787.31,
+                "ret_pct": 55.79,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 155547.22,
+                "ret_pct": 55.55,
+                "px": 313.74
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 8.19,
+            "max_dd_pp": -2.12,
+            "deployed_pp": 10.0
+          }
+        },
+        "half": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2020-02-25",
+                "px": 0.7372,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 21.2,
+                "cny": 148.37
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 1,
+                "usd": 2795.58,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 2104.42,
+                "cny": 14730.97
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 90.12,
+                "cny": 630.86
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 2400.0,
+                "cny": 16800.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2020-04-17",
+                "px": 0.675,
+                "usd": 6084.26,
+                "cny": 42589.8
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2020-04-17",
+                "px": 215.29,
+                "usd": 13915.74,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 25,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 20000.0,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 32561.12,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 34386.56,
+            "equity_proxy_mv": 65791.52,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 11,
+              "qqq": 1,
+              "call": 3
+            },
+            "max_dd_pct": -14.47,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 132739.2,
+              "ret_pct": 32.74,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 95300.19,
+                "ret_pct": -4.7,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 95696.54,
+                "ret_pct": -4.3,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 107984.87,
+                "ret_pct": 7.98,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 147117.7,
+                "ret_pct": 47.12,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 132739.2,
+                "ret_pct": 32.74,
+                "px": 313.74
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2020-02-25",
+                "px": 0.7372,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 771.2,
+                "cny": 5398.37
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 2,
+                "usd": 5591.15,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 1146.35,
+                "cny": 8024.44
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 615.12,
+                "cny": 4305.86
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 3300.0,
+                "cny": 23100.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 3879.83,
+                "cny": 27158.83
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 2786.83,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2020-03-26",
+                "px": 191.9,
+                "usd": 1666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2020-04-17",
+                "px": 215.29,
+                "usd": 16666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 26,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 30000.0,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 22561.12,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 51651.82,
+            "equity_proxy_mv": 65430.87,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 9,
+              "qqq": 3,
+              "call": 3
+            },
+            "max_dd_pct": -16.02,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 139643.81,
+              "ret_pct": 39.64,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 93324.17,
+                "ret_pct": -6.68,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 94130.03,
+                "ret_pct": -5.87,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 108927.25,
+                "ret_pct": 8.93,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 154964.06,
+                "ret_pct": 54.96,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 139643.81,
+                "ret_pct": 39.64,
+                "px": 313.74
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 6.9,
+            "max_dd_pp": -1.55,
+            "deployed_pp": 10.0
+          }
+        },
+        "cny_heavy": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2020-02-25",
+                "px": 0.7372,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 21.2,
+                "cny": 148.37
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 1,
+                "usd": 2795.58,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 2104.42,
+                "cny": 14730.97
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 90.12,
+                "cny": 630.86
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 2400.0,
+                "cny": 16800.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2020-04-17",
+                "px": 0.675,
+                "usd": 20000.0,
+                "cny": 140000.0
+              }
+            ],
+            "tp_count": 25,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 6084.26,
+            "spent_cny": 447410.2,
+            "cash_usd_left": 16476.87,
+            "cash_cny_left": 112589.8,
+            "equity_qqq_mv": 14107.28,
+            "equity_proxy_mv": 83830.44,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 11,
+              "qqq": 0,
+              "call": 3
+            },
+            "max_dd_pct": -15.69,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 130498.85,
+              "ret_pct": 30.5,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 95300.19,
+                "ret_pct": -4.7,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 95696.54,
+                "ret_pct": -4.3,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 108023.35,
+                "ret_pct": 8.02,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 148959.82,
+                "ret_pct": 48.96,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 130498.85,
+                "ret_pct": 30.5,
+                "px": 313.74
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2020-02-25",
+                "px": 0.7372,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2020-02-27",
+                "strike": 270.0,
+                "expiry": "2022-01-17",
+                "prem": 19.788,
+                "contracts": 1,
+                "usd": 1978.8,
+                "cny": 0.0,
+                "vxn": 41.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2020-02-27",
+                "px": 0.714,
+                "usd": 771.2,
+                "cny": 5398.37
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2020-03-09",
+                "strike": 255.0,
+                "expiry": "2022-01-17",
+                "prem": 27.9558,
+                "contracts": 2,
+                "usd": 5591.15,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 1146.35,
+                "cny": 8024.44
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2020-03-09",
+                "strike": 305.0,
+                "expiry": "2022-01-17",
+                "prem": 6.5494,
+                "contracts": 2,
+                "usd": 1309.88,
+                "cny": 0.0,
+                "vxn": 53.68000030517578
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2020-03-09",
+                "px": 0.6516,
+                "usd": 615.12,
+                "cny": 4305.86
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2020-03-12",
+                "px": 0.6352,
+                "usd": 3300.0,
+                "cny": 23100.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 6666.66,
+                "cny": 46666.65
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2020-03-26",
+                "px": 0.644,
+                "usd": 1666.67,
+                "cny": 11666.66
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2020-04-17",
+                "px": 0.675,
+                "usd": 16666.67,
+                "cny": 116666.69
+              }
+            ],
+            "tp_count": 26,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 8879.83,
+            "spent_cny": 497841.17,
+            "cash_usd_left": 13681.29,
+            "cash_cny_left": 62158.83,
+            "equity_qqq_mv": 20082.56,
+            "equity_proxy_mv": 93086.76,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 11,
+              "qqq": 0,
+              "call": 3
+            },
+            "max_dd_pct": -17.43,
+            "end": {
+              "date": "2020-12-31",
+              "nav": 135730.44,
+              "ret_pct": 35.73,
+              "px": 313.74
+            },
+            "marks": {
+              "2020-03-23": {
+                "date": "2020-03-23",
+                "nav": 93324.17,
+                "ret_pct": -6.68,
+                "px": 170.46
+              },
+              "2020-04-01": {
+                "date": "2020-04-01",
+                "nav": 94139.6,
+                "ret_pct": -5.86,
+                "px": 182.31
+              },
+              "2020-06-08": {
+                "date": "2020-06-08",
+                "nav": 108617.75,
+                "ret_pct": 8.62,
+                "px": 241.55
+              },
+              "2020-09-02": {
+                "date": "2020-09-02",
+                "nav": 157326.39,
+                "ret_pct": 57.33,
+                "px": 302.76
+              },
+              "2020-12-31": {
+                "date": "2020-12-31",
+                "nav": 135730.44,
+                "ret_pct": 35.73,
+                "px": 313.74
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 5.23,
+            "max_dd_pp": -1.74,
+            "deployed_pp": 10.0
+          }
+        }
+      },
+      "fx_delta_default": {
+        "half_vs_usd_end_pp": -14.62,
+        "cny_vs_usd_end_pp": -16.86,
+        "half_vs_usd_dd_pp": -2.21,
+        "cny_vs_usd_dd_pp": -3.43
+      }
+    },
+    {
+      "label": "2022 熊市 + 2023 修复（滚动 60 日 H）",
+      "start": "2022-01-03",
+      "end": "2023-12-29",
+      "marks": [
+        "2022-06-16",
+        "2022-10-14",
+        "2022-12-30",
+        "2023-06-30",
+        "2023-12-29"
+      ],
+      "h_mode": "rolling60",
+      "modes": {
+        "usd_only": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2022-01-18",
+                "px": 370.55,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 123.08,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 190.77,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-05-19",
+                "px": 289.58,
+                "usd": 9600.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-05-19",
+                "px": 289.58,
+                "usd": 480.64,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 8000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 2000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 50000.0,
+            "deployed_pct": 50.0,
+            "spent_usd": 50000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 50051.41,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 54747.16,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 10,
+              "call": 3
+            },
+            "max_dd_pct": -16.55,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 104798.57,
+              "ret_pct": 4.8,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 88594.55,
+                "ret_pct": -11.41,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 85500.39,
+                "ret_pct": -14.5,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 85650.57,
+                "ret_pct": -14.35,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 99437.76,
+                "ret_pct": -0.56,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 104798.57,
+                "ret_pct": 4.8,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2022-01-18",
+                "px": 370.55,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 232.06,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 1960.58,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 232.08,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-05-19",
+                "px": 289.58,
+                "usd": 13200.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-05-19",
+                "px": 289.58,
+                "usd": 1380.64,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 6666.66,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 1666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 63333.33,
+            "deployed_pct": 63.33,
+            "spent_usd": 63333.33,
+            "spent_cny": 0.0,
+            "cash_usd_left": 36738.65,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 68257.82,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 10,
+              "call": 4
+            },
+            "max_dd_pct": -21.08,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 104996.46,
+              "ret_pct": 5.0,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 84575.11,
+                "ret_pct": -15.42,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 80789.82,
+                "ret_pct": -19.21,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 81122.76,
+                "ret_pct": -18.88,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 98312.7,
+                "ret_pct": -1.69,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 104996.46,
+                "ret_pct": 5.0,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 0.2,
+            "max_dd_pp": -4.53,
+            "deployed_pp": 13.33
+          }
+        },
+        "half": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 123.08,
+                "cny": 861.53
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 190.77,
+                "cny": 1335.39
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 480.64,
+                "cny": 3364.46
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 2000.0,
+                "cny": 14000.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 50000.0,
+            "deployed_pct": 50.0,
+            "spent_usd": 7905.52,
+            "spent_cny": 294661.38,
+            "cash_usd_left": 42145.89,
+            "cash_cny_left": 55338.62,
+            "equity_qqq_mv": 1333.54,
+            "equity_proxy_mv": 50939.12,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 10,
+              "qqq": 0,
+              "call": 3
+            },
+            "max_dd_pct": -12.33,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 102324.08,
+              "ret_pct": 2.32,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 90765.98,
+                "ret_pct": -9.23,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 89672.93,
+                "ret_pct": -10.33,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 88535.57,
+                "ret_pct": -11.46,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 103040.91,
+                "ret_pct": 3.04,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 102324.08,
+                "ret_pct": 2.32,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 232.06,
+                "cny": 1624.43
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 1960.58,
+                "cny": 13724.03
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 232.08,
+                "cny": 1624.55
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 1380.64,
+                "cny": 9664.46
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 5907.15,
+                "cny": 41350.04
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 759.52,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-05-27",
+                "px": 309.1,
+                "usd": 1666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 63333.34,
+            "deployed_pct": 63.33,
+            "spent_usd": 13333.33,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 36738.65,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 4929.68,
+            "equity_proxy_mv": 60235.49,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 9,
+              "qqq": 2,
+              "call": 4
+            },
+            "max_dd_pct": -16.03,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 101903.82,
+              "ret_pct": 1.9,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 87032.45,
+                "ret_pct": -12.97,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 85617.79,
+                "ret_pct": -14.38,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 84425.98,
+                "ret_pct": -15.57,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 102423.17,
+                "ret_pct": 2.42,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 101903.82,
+                "ret_pct": 1.9,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": -0.42,
+            "max_dd_pp": -3.7,
+            "deployed_pp": 13.33
+          }
+        },
+        "cny_heavy": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 123.08,
+                "cny": 861.53
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 190.77,
+                "cny": 1335.39
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 480.64,
+                "cny": 3364.46
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 2000.0,
+                "cny": 14000.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 50000.0,
+            "deployed_pct": 50.0,
+            "spent_usd": 7905.52,
+            "spent_cny": 294661.38,
+            "cash_usd_left": 12145.89,
+            "cash_cny_left": 265338.62,
+            "equity_qqq_mv": 1333.54,
+            "equity_proxy_mv": 50939.12,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 10,
+              "qqq": 0,
+              "call": 3
+            },
+            "max_dd_pct": -12.33,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 102324.08,
+              "ret_pct": 2.32,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 90765.98,
+                "ret_pct": -9.23,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 89672.93,
+                "ret_pct": -10.33,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 88535.57,
+                "ret_pct": -11.46,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 103040.91,
+                "ret_pct": 3.04,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 102324.08,
+                "ret_pct": 2.32,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 232.06,
+                "cny": 1624.43
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 1960.58,
+                "cny": 13724.03
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 232.08,
+                "cny": 1624.55
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-05-19",
+                "strike": 380.0,
+                "expiry": "2024-01-17",
+                "prem": 19.1936,
+                "contracts": 1,
+                "usd": 1919.36,
+                "cny": 0.0,
+                "vxn": 36.150001525878906
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-05-19",
+                "px": 0.828,
+                "usd": 1380.64,
+                "cny": 9664.46
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 6666.66,
+                "cny": 46666.65
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-05-27",
+                "px": 0.848,
+                "usd": 1666.67,
+                "cny": 11666.66
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 63333.33,
+            "deployed_pct": 63.33,
+            "spent_usd": 10907.15,
+            "spent_cny": 366983.27,
+            "cash_usd_left": 9164.83,
+            "cash_cny_left": 193016.73,
+            "equity_qqq_mv": 1715.29,
+            "equity_proxy_mv": 63331.16,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 10,
+              "qqq": 0,
+              "call": 4
+            },
+            "max_dd_pct": -15.85,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 101785.09,
+              "ret_pct": 1.79,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 87185.38,
+                "ret_pct": -12.81,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 85891.52,
+                "ret_pct": -14.11,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 84621.89,
+                "ret_pct": -15.38,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 102670.7,
+                "ret_pct": 2.67,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 101785.09,
+                "ret_pct": 1.79,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": -0.53,
+            "max_dd_pp": -3.52,
+            "deployed_pp": 13.33
+          }
+        }
+      },
+      "fx_delta_default": {
+        "half_vs_usd_end_pp": -2.48,
+        "cny_vs_usd_end_pp": -2.48,
+        "half_vs_usd_dd_pp": 4.22,
+        "cny_vs_usd_dd_pp": 4.22
+      }
+    },
+    {
+      "label": "2022 熊市 + 2023 修复（波段高点 H）",
+      "start": "2022-01-03",
+      "end": "2023-12-29",
+      "marks": [
+        "2022-06-16",
+        "2022-10-14",
+        "2022-12-30",
+        "2023-06-30",
+        "2023-12-29"
+      ],
+      "h_mode": "cycle_peak",
+      "modes": {
+        "usd_only": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "usd_only",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2022-01-18",
+                "px": 370.55,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 123.08,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 190.77,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-03-14",
+                "px": 318.17,
+                "usd": 9600.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-03-14",
+                "px": 318.17,
+                "usd": 13.68,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 8000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2022-04-06",
+                "px": 353.26,
+                "usd": 20000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-QQQ",
+                "date": "2022-06-13",
+                "px": 275.41,
+                "usd": 10000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 80000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 20051.41,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 89847.06,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 12,
+              "call": 3
+            },
+            "max_dd_pct": -26.44,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 109898.47,
+              "ret_pct": 9.9,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 81223.09,
+                "ret_pct": -18.78,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 77414.96,
+                "ret_pct": -22.59,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 78472.19,
+                "ret_pct": -21.53,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 101100.7,
+                "ret_pct": 1.1,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 109898.47,
+                "ret_pct": 9.9,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "usd_only",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2022-01-18",
+                "px": 370.55,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2022-01-21",
+                "px": 351.69,
+                "usd": 232.06,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 1960.58,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2022-02-23",
+                "px": 329.42,
+                "usd": 232.08,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-03-14",
+                "px": 318.17,
+                "usd": 13200.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2022-03-14",
+                "px": 318.17,
+                "usd": 913.68,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 6666.66,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 1666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2022-04-06",
+                "px": 353.26,
+                "usd": 16666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-QQQ",
+                "date": "2022-06-13",
+                "px": 275.41,
+                "usd": 6666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 86666.67,
+            "deployed_pct": 86.67,
+            "spent_usd": 86666.67,
+            "spent_cny": 0.0,
+            "cash_usd_left": 13405.31,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 94167.77,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 12,
+              "call": 4
+            },
+            "max_dd_pct": -30.44,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 107573.08,
+              "ret_pct": 7.57,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 77780.1,
+                "ret_pct": -22.22,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 73519.84,
+                "ret_pct": -26.48,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 74635.52,
+                "ret_pct": -25.36,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 98352.22,
+                "ret_pct": -1.65,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 107573.08,
+                "ret_pct": 7.57,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": -2.33,
+            "max_dd_pp": -4.0,
+            "deployed_pp": 6.67
+          }
+        },
+        "half": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "half",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 123.08,
+                "cny": 861.53
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 190.77,
+                "cny": 1335.39
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 13.68,
+                "cny": 95.79
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2022-04-06",
+                "px": 0.967,
+                "usd": 8372.47,
+                "cny": 58607.29
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2022-04-06",
+                "px": 353.26,
+                "usd": 11627.53,
+                "cny": 0.0
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-QQQ",
+                "date": "2022-06-13",
+                "px": 275.41,
+                "usd": 10000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 30000.0,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 20051.41,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 29825.01,
+            "equity_proxy_mv": 58612.4,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 11,
+              "qqq": 2,
+              "call": 3
+            },
+            "max_dd_pct": -20.79,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 108488.83,
+              "ret_pct": 8.49,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 84674.31,
+                "ret_pct": -15.33,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 83131.34,
+                "ret_pct": -16.87,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 82726.54,
+                "ret_pct": -17.27,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 106543.45,
+                "ret_pct": 6.54,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 108488.83,
+                "ret_pct": 8.49,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "half",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 232.06,
+                "cny": 1624.43
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 1960.58,
+                "cny": 13724.03
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 232.08,
+                "cny": 1624.55
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 913.68,
+                "cny": 6395.79
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 6374.1,
+                "cny": 44618.7
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 292.56,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2022-03-16",
+                "px": 340.32,
+                "usd": 1666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2022-04-06",
+                "px": 353.26,
+                "usd": 16666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-QQQ",
+                "date": "2022-06-13",
+                "px": 275.41,
+                "usd": 6666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 86666.67,
+            "deployed_pct": 86.67,
+            "spent_usd": 36666.67,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 13405.31,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 33449.56,
+            "equity_proxy_mv": 59048.81,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 9,
+              "qqq": 4,
+              "call": 4
+            },
+            "max_dd_pct": -24.56,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 105903.67,
+              "ret_pct": 5.9,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 81091.83,
+                "ret_pct": -18.91,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 79120.07,
+                "ret_pct": -20.88,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 78759.47,
+                "ret_pct": -21.24,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 103610.63,
+                "ret_pct": 3.61,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 105903.67,
+                "ret_pct": 5.9,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": -2.59,
+            "max_dd_pp": -3.77,
+            "deployed_pp": 6.67
+          }
+        },
+        "cny_heavy": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "cny_heavy",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 7700.0,
+                "cny": 53900.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 123.08,
+                "cny": 861.53
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 5,
+                "usd": 1209.23,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 190.77,
+                "cny": 1335.39
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 13.68,
+                "cny": 95.79
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2022-04-06",
+                "px": 0.967,
+                "usd": 20000.0,
+                "cny": 140000.0
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-513100",
+                "date": "2022-06-13",
+                "px": 0.804,
+                "usd": 10000.0,
+                "cny": 70000.0
+              }
+            ],
+            "tp_count": 42,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 8372.47,
+            "spent_cny": 501392.71,
+            "cash_usd_left": 11678.94,
+            "cash_cny_left": 58607.29,
+            "equity_qqq_mv": 1476.22,
+            "equity_proxy_mv": 85080.44,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 12,
+              "qqq": 0,
+              "call": 3
+            },
+            "max_dd_pct": -19.59,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 106608.08,
+              "ret_pct": 6.61,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 85408.28,
+                "ret_pct": -14.59,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 84920.56,
+                "ret_pct": -15.08,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 83838.71,
+                "ret_pct": -16.16,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 107878.91,
+                "ret_pct": 7.88,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 106608.08,
+                "ret_pct": 6.61,
+                "px": 409.52
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "cny_heavy",
+            "h_mode": "cycle_peak",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "513100"
+            ],
+            "proxy_buy_kinds": [
+              "equity-513100"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "T5",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-513100",
+                "date": "2022-01-18",
+                "px": 1.008,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2022-01-21",
+                "strike": 465.0,
+                "expiry": "2024-01-17",
+                "prem": 25.1794,
+                "contracts": 1,
+                "usd": 2517.94,
+                "cny": 0.0,
+                "vxn": 34.060001373291016
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-513100",
+                "date": "2022-01-21",
+                "px": 0.96,
+                "usd": 232.06,
+                "cny": 1624.43
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 10587.5,
+                "cny": 74112.5
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2022-02-23",
+                "strike": 435.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8846,
+                "contracts": 2,
+                "usd": 4776.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 1960.58,
+                "cny": 13724.03
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2022-02-23",
+                "strike": 520.0,
+                "expiry": "2024-01-17",
+                "prem": 2.4185,
+                "contracts": 7,
+                "usd": 1692.92,
+                "cny": 0.0,
+                "vxn": 35.27000045776367
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-513100",
+                "date": "2022-02-23",
+                "px": 0.908,
+                "usd": 232.08,
+                "cny": 1624.55
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "call-medium",
+                "date": "2022-03-14",
+                "strike": 420.0,
+                "expiry": "2024-01-17",
+                "prem": 23.8632,
+                "contracts": 1,
+                "usd": 2386.32,
+                "cny": 0.0,
+                "vxn": 36.54999923706055
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-513100",
+                "date": "2022-03-14",
+                "px": 0.868,
+                "usd": 913.68,
+                "cny": 6395.79
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 6666.66,
+                "cny": 46666.65
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-513100",
+                "date": "2022-03-16",
+                "px": 0.883,
+                "usd": 1666.67,
+                "cny": 11666.66
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-513100",
+                "date": "2022-04-06",
+                "px": 0.967,
+                "usd": 16666.67,
+                "cny": 116666.69
+              },
+              {
+                "tier": "T5",
+                "kind": "equity-513100",
+                "date": "2022-06-13",
+                "px": 0.804,
+                "usd": 6666.67,
+                "cny": 46666.69
+              }
+            ],
+            "tp_count": 62,
+            "deployed": 86666.67,
+            "deployed_pct": 86.67,
+            "spent_usd": 11374.1,
+            "spent_cny": 527047.99,
+            "cash_usd_left": 8697.88,
+            "cash_cny_left": 32952.01,
+            "equity_qqq_mv": 1857.96,
+            "equity_proxy_mv": 89070.14,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 12,
+              "qqq": 0,
+              "call": 4
+            },
+            "max_dd_pct": -22.88,
+            "end": {
+              "date": "2023-12-29",
+              "nav": 104333.41,
+              "ret_pct": 4.33,
+              "px": 409.52
+            },
+            "marks": {
+              "2022-06-16": {
+                "date": "2022-06-16",
+                "nav": 82297.42,
+                "ret_pct": -17.7,
+                "px": 271.39
+              },
+              "2022-10-14": {
+                "date": "2022-10-14",
+                "nav": 81507.94,
+                "ret_pct": -18.49,
+                "px": 260.74
+              },
+              "2022-12-30": {
+                "date": "2022-12-30",
+                "nav": 80387.01,
+                "ret_pct": -19.61,
+                "px": 266.28
+              },
+              "2023-06-30": {
+                "date": "2023-06-30",
+                "nav": 105633.24,
+                "ret_pct": 5.63,
+                "px": 369.42
+              },
+              "2023-12-29": {
+                "date": "2023-12-29",
+                "nav": 104333.41,
+                "ret_pct": 4.33,
+                "px": 409.52
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": -2.28,
+            "max_dd_pp": -3.29,
+            "deployed_pp": 6.67
+          }
+        }
+      },
+      "fx_delta_default": {
+        "half_vs_usd_end_pp": -1.41,
+        "cny_vs_usd_end_pp": -3.29,
+        "half_vs_usd_dd_pp": 5.65,
+        "cny_vs_usd_dd_pp": 6.85
+      }
+    },
+    {
+      "label": "2025 年春抄底",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "marks": [
+        "2025-04-07",
+        "2025-04-08",
+        "2025-06-10",
+        "2025-10-29",
+        "2025-12-31"
+      ],
+      "h_mode": "rolling60",
+      "modes": {
+        "usd_only": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2025-03-03",
+                "px": 497.05,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2025-03-10",
+                "px": 472.73,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2025-03-10",
+                "px": 472.73,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 1,
+                "usd": 3180.46,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 1719.54,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 3,
+                "usd": 1084.23,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 315.77,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2025-04-07",
+                "px": 423.69,
+                "usd": 9600.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2025-04-07",
+                "px": 423.69,
+                "usd": 2400.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2025-04-23",
+                "px": 454.56,
+                "usd": 8000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2025-04-23",
+                "px": 454.56,
+                "usd": 2000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2025-05-14",
+                "px": 518.68,
+                "usd": 20000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 8,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 70000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 33147.54,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 97620.01,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 11,
+              "call": 2
+            },
+            "max_dd_pct": -6.69,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 130767.55,
+              "ret_pct": 30.77,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 98627.08,
+                "ret_pct": -1.37,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 97796.31,
+                "ret_pct": -2.2,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 111827.25,
+                "ret_pct": 11.83,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 135647.6,
+                "ret_pct": 35.65,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 130767.55,
+                "ret_pct": 30.77,
+                "px": 614.31
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2025-03-03",
+                "px": 497.05,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2025-03-10",
+                "px": 472.73,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2025-03-10",
+                "strike": 625.0,
+                "expiry": "2027-01-17",
+                "prem": 22.0842,
+                "contracts": 1,
+                "usd": 2208.42,
+                "cny": 0.0,
+                "vxn": 28.84000015258789
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2025-03-10",
+                "px": 472.73,
+                "usd": 541.58,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 2,
+                "usd": 6360.93,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 376.57,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 5,
+                "usd": 1807.04,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 117.96,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2025-04-07",
+                "px": 423.69,
+                "usd": 13200.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-QQQ",
+                "date": "2025-04-07",
+                "px": 423.69,
+                "usd": 3300.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2025-04-23",
+                "px": 454.56,
+                "usd": 6666.66,
+                "cny": 0.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-QQQ",
+                "date": "2025-04-23",
+                "px": 454.56,
+                "usd": 1666.67,
+                "cny": 0.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2025-05-14",
+                "px": 518.68,
+                "usd": 16666.67,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 29,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 80000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 25245.9,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 120200.08,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 11,
+              "call": 3
+            },
+            "max_dd_pct": -8.3,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 145445.98,
+              "ret_pct": 45.45,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 98476.44,
+                "ret_pct": -1.52,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 97223.8,
+                "ret_pct": -2.78,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 115075.29,
+                "ret_pct": 15.08,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 153037.0,
+                "ret_pct": 53.04,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 145445.98,
+                "ret_pct": 45.45,
+                "px": 614.31
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 14.68,
+            "max_dd_pp": -1.61,
+            "deployed_pp": 10.0
+          }
+        },
+        "half": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2025-03-03",
+                "px": 1.5,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 1,
+                "usd": 3180.46,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 1719.54,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 3,
+                "usd": 1084.23,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 315.77,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 2400.0,
+                "cny": 16800.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-159509",
+                "date": "2025-05-14",
+                "px": 1.541,
+                "usd": 14000.0,
+                "cny": 98000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2025-05-14",
+                "px": 518.68,
+                "usd": 6000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 8,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 20000.0,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 33147.54,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 32314.14,
+            "equity_proxy_mv": 81705.04,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 8,
+              "qqq": 4,
+              "call": 2
+            },
+            "max_dd_pct": -7.07,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 147166.72,
+              "ret_pct": 47.17,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 98081.65,
+                "ret_pct": -1.92,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 98190.02,
+                "ret_pct": -1.81,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 110660.28,
+                "ret_pct": 10.66,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 149158.86,
+                "ret_pct": 49.16,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 147166.72,
+                "ret_pct": 47.17,
+                "px": 614.31
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2025-03-03",
+                "px": 1.5,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2025-03-10",
+                "strike": 625.0,
+                "expiry": "2027-01-17",
+                "prem": 22.0842,
+                "contracts": 1,
+                "usd": 2208.42,
+                "cny": 0.0,
+                "vxn": 28.84000015258789
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 541.58,
+                "cny": 3791.06
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 2,
+                "usd": 6360.93,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 376.57,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 5,
+                "usd": 1807.04,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 117.96,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 3300.0,
+                "cny": 23100.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 6666.66,
+                "cny": 46666.65
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 1666.67,
+                "cny": 11666.66
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-159509",
+                "date": "2025-05-14",
+                "px": 1.541,
+                "usd": 8125.09,
+                "cny": 56875.63
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-QQQ",
+                "date": "2025-05-14",
+                "px": 518.68,
+                "usd": 8541.58,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 29,
+            "deployed": 80000.0,
+            "deployed_pct": 80.0,
+            "spent_usd": 30000.0,
+            "spent_cny": 350000.0,
+            "cash_usd_left": 25245.9,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 53770.66,
+            "equity_proxy_mv": 83260.05,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 8,
+              "qqq": 4,
+              "call": 3
+            },
+            "max_dd_pct": -8.84,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 162276.61,
+              "ret_pct": 62.28,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 97823.37,
+                "ret_pct": -2.18,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 97786.6,
+                "ret_pct": -2.21,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 113989.89,
+                "ret_pct": 13.99,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 166928.93,
+                "ret_pct": 66.93,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 162276.61,
+                "ret_pct": 62.28,
+                "px": 614.31
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 15.11,
+            "max_dd_pp": -1.77,
+            "deployed_pp": 10.0
+          }
+        },
+        "cny_heavy": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2025-03-03",
+                "px": 1.5,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 7700.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 1,
+                "usd": 3180.46,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 1719.54,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 3,
+                "usd": 1084.23,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 315.77,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 9600.0,
+                "cny": 67200.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 2400.0,
+                "cny": 16800.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 8000.0,
+                "cny": 56000.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 2000.0,
+                "cny": 14000.0
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-159509",
+                "date": "2025-05-14",
+                "px": 1.541,
+                "usd": 20000.0,
+                "cny": 140000.0
+              }
+            ],
+            "tp_count": 8,
+            "deployed": 70000.0,
+            "deployed_pct": 70.0,
+            "spent_usd": 14000.0,
+            "spent_cny": 392000.0,
+            "cash_usd_left": 9147.54,
+            "cash_cny_left": 168000.0,
+            "equity_qqq_mv": 25207.9,
+            "equity_proxy_mv": 90621.33,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 8,
+              "qqq": 3,
+              "call": 2
+            },
+            "max_dd_pct": -7.85,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 148976.77,
+              "ret_pct": 48.98,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 98081.65,
+                "ret_pct": -1.92,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 98190.02,
+                "ret_pct": -1.81,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 110550.71,
+                "ret_pct": 10.55,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 150654.48,
+                "ret_pct": 50.65,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 148976.77,
+                "ret_pct": 48.98,
+                "px": 614.31
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2",
+              "T3",
+              "T4",
+              "R1",
+              "R2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2025-03-03",
+                "px": 1.5,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "call-medium",
+                "date": "2025-03-10",
+                "strike": 625.0,
+                "expiry": "2027-01-17",
+                "prem": 22.0842,
+                "contracts": 1,
+                "usd": 2208.42,
+                "cny": 0.0,
+                "vxn": 28.84000015258789
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2025-03-10",
+                "px": 1.443,
+                "usd": 541.58,
+                "cny": 3791.06
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 10587.5,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-medium",
+                "date": "2025-04-04",
+                "strike": 560.0,
+                "expiry": "2027-01-17",
+                "prem": 31.8046,
+                "contracts": 2,
+                "usd": 6360.93,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 376.57,
+                "cny": 0.0
+              },
+              {
+                "tier": "T3",
+                "kind": "call-deep",
+                "date": "2025-04-04",
+                "strike": 665.0,
+                "expiry": "2027-01-17",
+                "prem": 3.6141,
+                "contracts": 1,
+                "usd": 361.41,
+                "cny": 0.0,
+                "vxn": 37.650001525878906
+              },
+              {
+                "tier": "T3",
+                "kind": "equity-QQQ",
+                "date": "2025-04-04",
+                "px": 422.67,
+                "usd": 105.17,
+                "cny": 0.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 13200.0,
+                "cny": 92400.0
+              },
+              {
+                "tier": "T4",
+                "kind": "equity-159509",
+                "date": "2025-04-07",
+                "px": 1.23,
+                "usd": 3300.0,
+                "cny": 23100.0
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 6666.66,
+                "cny": 46666.65
+              },
+              {
+                "tier": "R1",
+                "kind": "equity-159509",
+                "date": "2025-04-23",
+                "px": 1.371,
+                "usd": 1666.67,
+                "cny": 11666.66
+              },
+              {
+                "tier": "R2",
+                "kind": "equity-159509",
+                "date": "2025-05-14",
+                "px": 1.541,
+                "usd": 16666.67,
+                "cny": 116666.69
+              }
+            ],
+            "tp_count": 29,
+            "deployed": 78541.58,
+            "deployed_pct": 78.54,
+            "spent_usd": 20000.0,
+            "spent_cny": 409791.06,
+            "cash_usd_left": 1049.18,
+            "cash_cny_left": 150208.94,
+            "equity_qqq_mv": 41082.53,
+            "equity_proxy_mv": 95953.24,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 8,
+              "qqq": 3,
+              "call": 3
+            },
+            "max_dd_pct": -7.69,
+            "end": {
+              "date": "2025-12-31",
+              "nav": 159543.38,
+              "ret_pct": 59.54,
+              "px": 614.31
+            },
+            "marks": {
+              "2025-04-07": {
+                "date": "2025-04-07",
+                "nav": 97632.77,
+                "ret_pct": -2.37,
+                "px": 423.69
+              },
+              "2025-04-08": {
+                "date": "2025-04-08",
+                "nav": 97705.09,
+                "ret_pct": -2.29,
+                "px": 416.06
+              },
+              "2025-06-10": {
+                "date": "2025-06-10",
+                "nav": 112459.6,
+                "ret_pct": 12.46,
+                "px": 534.21
+              },
+              "2025-10-29": {
+                "date": "2025-10-29",
+                "nav": 163658.23,
+                "ret_pct": 63.66,
+                "px": 635.77
+              },
+              "2025-12-31": {
+                "date": "2025-12-31",
+                "nav": 159543.38,
+                "ret_pct": 59.54,
+                "px": 614.31
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 10.56,
+            "max_dd_pp": 0.16,
+            "deployed_pp": 8.54
+          }
+        }
+      },
+      "fx_delta_default": {
+        "half_vs_usd_end_pp": 16.4,
+        "cny_vs_usd_end_pp": 18.21,
+        "half_vs_usd_dd_pp": -0.38,
+        "cny_vs_usd_dd_pp": -1.16
+      }
+    },
+    {
+      "label": "2026 年春浅回撤",
+      "start": "2026-01-15",
+      "end": "2026-09-08",
+      "marks": [
+        "2026-03-30",
+        "2026-04-02",
+        "2026-06-02",
+        "2026-09-08"
+      ],
+      "h_mode": "rolling60",
+      "modes": {
+        "usd_only": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2026-03-20",
+                "px": 582.06,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2026-03-30",
+                "px": 558.28,
+                "usd": 6000.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2026-03-30",
+                "px": 558.28,
+                "usd": 2000.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 14000.0,
+            "deployed_pct": 14.0,
+            "spent_usd": 14000.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 86000.0,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 17698.91,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 3,
+              "call": 0
+            },
+            "max_dd_pct": -1.99,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 103698.91,
+              "ret_pct": 3.7,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99754.87,
+                "ret_pct": -0.25,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 100412.7,
+                "ret_pct": 0.41,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 104383.85,
+                "ret_pct": 4.38,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 103698.91,
+                "ret_pct": 3.7,
+                "px": 718.36
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "usd_only",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-QQQ",
+                "date": "2026-03-20",
+                "px": 582.06,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2026-03-30",
+                "px": 558.28,
+                "usd": 8250.0,
+                "cny": 0.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-QQQ",
+                "date": "2026-03-30",
+                "px": 558.28,
+                "usd": 2750.0,
+                "cny": 0.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 19250.0,
+            "deployed_pct": 19.25,
+            "spent_usd": 19250.0,
+            "spent_cny": 0.0,
+            "cash_usd_left": 80750.0,
+            "cash_cny_left": 0.0,
+            "equity_qqq_mv": 24336.0,
+            "equity_proxy_mv": 0.0,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 0,
+              "qqq": 3,
+              "call": 0
+            },
+            "max_dd_pct": -2.7,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 105086.0,
+              "ret_pct": 5.09,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99662.95,
+                "ret_pct": -0.34,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 100567.47,
+                "ret_pct": 0.57,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 106027.79,
+                "ret_pct": 6.03,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 105086.0,
+                "ret_pct": 5.09,
+                "px": 718.36
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 1.39,
+            "max_dd_pp": -0.71,
+            "deployed_pp": 5.25
+          }
+        },
+        "half": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2026-03-20",
+                "px": 2.021,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 2000.0,
+                "cny": 14000.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 14000.0,
+            "deployed_pct": 14.0,
+            "spent_usd": 0.0,
+            "spent_cny": 98000.0,
+            "cash_usd_left": 50000.0,
+            "cash_cny_left": 252000.0,
+            "equity_qqq_mv": 0.0,
+            "equity_proxy_mv": 20129.41,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 3,
+              "qqq": 0,
+              "call": 0
+            },
+            "max_dd_pct": -2.46,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 106129.41,
+              "ret_pct": 6.13,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99741.71,
+                "ret_pct": -0.26,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 99890.92,
+                "ret_pct": -0.11,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 106214.67,
+                "ret_pct": 6.21,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 106129.41,
+                "ret_pct": 6.13,
+                "px": 718.36
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "half",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2026-03-20",
+                "px": 2.021,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 2750.0,
+                "cny": 19250.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 19250.0,
+            "deployed_pct": 19.25,
+            "spent_usd": 0.0,
+            "spent_cny": 134750.0,
+            "cash_usd_left": 50000.0,
+            "cash_cny_left": 215250.0,
+            "equity_qqq_mv": 0.0,
+            "equity_proxy_mv": 27677.93,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 3,
+              "qqq": 0,
+              "call": 0
+            },
+            "max_dd_pct": -3.3,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 108427.93,
+              "ret_pct": 8.43,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99644.85,
+                "ret_pct": -0.36,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 99850.02,
+                "ret_pct": -0.15,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 108545.17,
+                "ret_pct": 8.55,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 108427.93,
+                "ret_pct": 8.43,
+                "px": 718.36
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 2.3,
+            "max_dd_pp": -0.84,
+            "deployed_pp": 5.25
+          }
+        },
+        "cny_heavy": {
+          "default": {
+            "variant": "default",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2026-03-20",
+                "px": 2.021,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 6000.0,
+                "cny": 42000.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 2000.0,
+                "cny": 14000.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 14000.0,
+            "deployed_pct": 14.0,
+            "spent_usd": 0.0,
+            "spent_cny": 98000.0,
+            "cash_usd_left": 20000.0,
+            "cash_cny_left": 462000.0,
+            "equity_qqq_mv": 0.0,
+            "equity_proxy_mv": 20129.41,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 3,
+              "qqq": 0,
+              "call": 0
+            },
+            "max_dd_pct": -2.46,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 106129.41,
+              "ret_pct": 6.13,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99741.71,
+                "ret_pct": -0.26,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 99890.92,
+                "ret_pct": -0.11,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 106214.67,
+                "ret_pct": 6.21,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 106129.41,
+                "ret_pct": 6.13,
+                "px": 718.36
+              }
+            }
+          },
+          "vBoost": {
+            "variant": "vBoost",
+            "cash_mode": "cny_heavy",
+            "h_mode": "rolling60",
+            "option_policy": "playbook",
+            "model": "equity+synthetic-leap+real-cny-etf",
+            "proxy_sources": [
+              "159509"
+            ],
+            "proxy_buy_kinds": [
+              "equity-159509"
+            ],
+            "fired": [
+              "T1",
+              "T2"
+            ],
+            "buys": [
+              {
+                "tier": "T1",
+                "kind": "equity-159509",
+                "date": "2026-03-20",
+                "px": 2.021,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 8250.0,
+                "cny": 57750.0
+              },
+              {
+                "tier": "T2",
+                "kind": "equity-159509",
+                "date": "2026-03-30",
+                "px": 1.934,
+                "usd": 2750.0,
+                "cny": 19250.0
+              }
+            ],
+            "tp_count": 0,
+            "deployed": 19250.0,
+            "deployed_pct": 19.25,
+            "spent_usd": 0.0,
+            "spent_cny": 134750.0,
+            "cash_usd_left": 20000.0,
+            "cash_cny_left": 425250.0,
+            "equity_qqq_mv": 0.0,
+            "equity_proxy_mv": 27677.93,
+            "option_mv": 0,
+            "buy_counts": {
+              "proxy": 3,
+              "qqq": 0,
+              "call": 0
+            },
+            "max_dd_pct": -3.3,
+            "end": {
+              "date": "2026-09-08",
+              "nav": 108427.93,
+              "ret_pct": 8.43,
+              "px": 718.36
+            },
+            "marks": {
+              "2026-03-30": {
+                "date": "2026-03-30",
+                "nav": 99644.85,
+                "ret_pct": -0.36,
+                "px": 558.28
+              },
+              "2026-04-02": {
+                "date": "2026-04-02",
+                "nav": 99850.02,
+                "ret_pct": -0.15,
+                "px": 584.98
+              },
+              "2026-06-02": {
+                "date": "2026-06-02",
+                "nav": 108545.17,
+                "ret_pct": 8.55,
+                "px": 746.16
+              },
+              "2026-09-08": {
+                "date": "2026-09-08",
+                "nav": 108427.93,
+                "ret_pct": 8.43,
+                "px": 718.36
+              }
+            }
+          },
+          "delta": {
+            "end_ret_pp": 2.3,
+            "max_dd_pp": -0.84,
+            "deployed_pp": 5.25
+          }
+        }
+      },
+      "fx_delta_default": {
+        "half_vs_usd_end_pp": 2.43,
+        "cny_vs_usd_end_pp": 2.43,
+        "half_vs_usd_dd_pp": -0.47,
+        "cny_vs_usd_dd_pp": -0.47
+      }
+    }
+  ]
+}
